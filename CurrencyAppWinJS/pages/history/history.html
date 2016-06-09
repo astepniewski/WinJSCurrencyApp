@@ -1,0 +1,33 @@
+﻿<link href="history.css" rel="stylesheet" />
+<link href="../../css/chartist.min.css" rel="stylesheet" />
+<script src="/pages/history/history.js"></script>
+
+<h2 id="historyPageTitle" class="win-h2" style="padding:10px 10px 10px 20px">Wczytywanie...</h2>
+
+<div style="text-align: center">
+    <div id="rollableDiv">
+        <div style="display: inline-block;">
+            <div style="display: inline-block;">
+                <h4 class="date-label">Od:</h4>
+                <input class='win-textarea date-picker' id="startDate" type="date" />
+            </div>
+            <div style="display: inline-block;">
+                <h4 class="date-label">Do:</h4>
+                <input class='win-textarea date-picker' id="endDate" type="date" />
+            </div>
+        </div>
+        <div>
+            <button id="showBtn" class="win-button show-button">Pokaż</button>
+        </div>
+    </div>
+    <div>
+        <button class="win-button roll-button" id="rollBtn"></button>
+        <progress id="testProgress" value="0" max="100" style="width:100%"></progress>
+        <div id="chart" style="background-color:white;">
+            <div id="chartContainer" style="height: 350px; width: 100%;"></div>
+        </div>
+    </div>
+</div>
+<div id="createAppBar" data-win-control="WinJS.UI.AppBar" data-win-options="{placement:'bottom'}">
+    <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{id:'saveCmd',label:'Zapisz',icon:'save',tooltip:'Zapisz wykres',section:'primary',type:'flyout'}"></button>
+</div>

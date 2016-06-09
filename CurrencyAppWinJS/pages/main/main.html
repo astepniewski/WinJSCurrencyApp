@@ -1,0 +1,41 @@
+﻿
+<link href="/pages/main/main.css" rel="stylesheet" />
+<script src="/pages/main/main.js"></script>
+
+<div id="app">
+    <div class="splitView" data-win-control="WinJS.UI.SplitView">
+        <!-- Pane area -->
+        <div class="splitViewContent">
+            <div class="header">
+                <button class="win-splitviewpanetoggle"
+                        data-win-control="WinJS.UI.SplitViewPaneToggle"
+                        data-win-options="{ splitView: select('.splitView') }"></button>
+                <div class="title">Daty</div>
+            </div>
+
+            <div class="nav-commands">
+                <div id="dataTemple" data-win-control="WinJS.Binding.Template">
+                    <h4 class="win-h4" data-win-bind="textContent: date" style="padding:5px"></h4>
+                </div>
+
+                <div id="datesListView" data-win-control="WinJS.UI.ListView"
+                     data-win-options="{ layout : {type: WinJS.UI.ListLayout}}"></div>
+            </div>
+        </div>
+
+        <!-- Content area -->
+        <div class="contenttext">
+            <h2 id="title" class="win-h2" style="padding:10px 10px 10px 20px">Ładowanie kursów...</h2>
+            <div id="courseTemple" data-win-control="WinJS.Binding.Template">
+                <h4 class="win-h4" data-win-bind="textContent: name" style="float:left; padding:10px"></h4>
+                <h4 class="win-h4" data-win-bind="textContent: avg" style="float:right; padding:10px"></h4>
+            </div>
+
+            <div id="coursesListView" data-win-control="WinJS.UI.ListView"
+                 data-win-options="{ layout : {type: WinJS.UI.ListLayout}}"></div>
+        </div>
+    </div>
+</div>
+
+
+

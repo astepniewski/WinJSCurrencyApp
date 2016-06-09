@@ -1,0 +1,38 @@
+﻿.content,
+#app {
+    height: 100%;
+}
+
+    #app #app .win-splitviewpanetoggle {
+        float: left;
+    }
+
+    /* SplitView pane content style*/
+    #app .header {
+        white-space: nowrap;
+    }
+
+    #app .splitViewContent {
+        max-width: 135px;
+    }
+
+    #app .title {
+        font-size: 25px;
+        left: 50px;
+        margin-top: 6px;
+        vertical-align: middle;
+        display: inline-block;
+    }
+
+    #app .nav-commands {
+        margin-top: 20px;
+    }
+
+    #app #coursesListView {
+        height: 90vh;
+    }
+
+#datesListView {
+    height: 90vh;
+    visibility: hidden;
+}

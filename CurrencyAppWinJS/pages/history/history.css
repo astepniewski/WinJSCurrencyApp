@@ -1,0 +1,30 @@
+﻿.win-datepicker .win-order0 {
+    order: 1;
+}
+
+.win-datepicker .win-order1 {
+    order: 0;
+}
+
+.win-datepicker .win-order2 {
+    order: 2;
+}
+
+.roll-button {
+    margin: 10px 0px 0px 0px;
+    width: 100%;
+}
+
+.show-button {
+    margin: 10px 0px 0px 0px;
+    max-width: 500px;
+    width: 100%;
+}
+
+.date-picker {
+}
+
+.date-label {
+    float: left;
+    margin: 15px 10px 10px 10px;
+}
